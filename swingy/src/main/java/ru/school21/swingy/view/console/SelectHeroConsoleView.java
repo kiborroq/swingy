@@ -61,7 +61,7 @@ public class SelectHeroConsoleView implements SelectHeroView {
 					selectHeroMode();
 					break;
 				case 3:
-					controller.exit();
+					exit();
 					break;
 			}
 		}
@@ -122,4 +122,9 @@ public class SelectHeroConsoleView implements SelectHeroView {
 		}
 	}
 
+	private void exit() {
+		if (chooseVariantNumber("Exit", "Cancel") == 1) {
+			controller.exit();
+		}
+	}
 }
