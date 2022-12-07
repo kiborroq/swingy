@@ -1,0 +1,22 @@
+[
+	{
+		"name": "grass",
+		"image": "/images/terrains/grass.png"
+	},
+	{
+		"name": "ground",
+		"image": "/images/terrains/ground.png"
+	},
+	{
+		"name": "light ground",
+		"image": "/images/terrains/ground.png"
+	},
+	{
+		"name": "snow",
+		"image": "/images/terrains/snow.png"
+	},
+	{
+		"name": "grass water",
+		"image": "/images/terrains/grass_water.png"
+	}
+]

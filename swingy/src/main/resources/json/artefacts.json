@@ -1,0 +1,164 @@
+[
+	{
+		"name": "Centaur's Axe",
+		"image": "/images/weapon/Centaur's_Axe.gif",
+		"level": 1,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Blackshard of the Dead Knight",
+		"image": "/images/weapon/Blackshard_of_the_Dead_Knight.gif",
+		"level": 2,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Greater Gnoll's Flail",
+		"image": "/images/weapon/Greater_Gnoll's_Flail.gif",
+		"level": 3,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Ogre's Club of Havoc",
+		"image": "/images/weapon/Ogre's_Club_of_Havoc.gif",
+		"level": 4,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Red Dragon Flame Tongue",
+		"image": "/images/weapon/Red_Dragon_Flame_Tongue.gif",
+		"level": 5,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Titan's Gladius",
+		"image": "/images/weapon/Titan's_Gladius.gif",
+		"level": 6,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Sword of Judgement",
+		"image": "/images/weapon/Sword_of_Judgement.gif",
+		"level": 7,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Titan's Thunder",
+		"image": "/images/weapon/Titan's_Thunder.gif",
+		"level": 8,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Angelic Alliance",
+		"image": "/images/weapon/Angelic_Alliance.gif",
+		"level": 9,
+		"type": "WEAPON"
+	},
+	{
+		"name": "Helm of the Alabaster Unicorn",
+		"image": "/images/helms/Helm_of_the_Alabaster_Unicorn.gif",
+		"level": 1,
+		"type": "HELM"
+	},
+	{
+		"name": "Skull Helmet",
+		"image": "/images/helms/Skull_Helmet.gif",
+		"level": 2,
+		"type": "HELM"
+	},
+	{
+		"name": "Helm of Chaos",
+		"image": "/images/helms/Helm_of_Chaos.gif",
+		"level": 3,
+		"type": "HELM"
+	},
+	{
+		"name": "Crown of the Supreme Magi",
+		"image": "/images/helms/Crown_of_the_Supreme_Magi.gif",
+		"level": 4,
+		"type": "HELM"
+	},
+	{
+		"name": "Hellstorm Helmet",
+		"image": "/images/helms/Hellstorm_Helmet.gif",
+		"level": 5,
+		"type": "HELM"
+	},
+	{
+		"name": "Crown of Dragontooth",
+		"image": "/images/helms/Crown_of_Dragontooth.gif",
+		"level": 6,
+		"type": "HELM"
+	},
+	{
+		"name": "Thunder Helmet",
+		"image": "/images/helms/Thunder_Helmet.gif",
+		"level": 7,
+		"type": "HELM"
+	},
+	{
+		"name": "Sea Captain's Hat",
+		"image": "/images/helms/Sea_Captain's_Hat.gif",
+		"level": 8,
+		"type": "HELM"
+	},
+	{
+		"name": "Helm of Heavenly",
+		"image": "/images/helms/Helm_of_Heavenly_Enlightenment.gif",
+		"level": 9,
+		"type": "HELM"
+	},
+	{
+		"name": "Breastplate of Petrified Wood",
+		"image": "/images/armors/Breastplate_of_Petrified_Wood.gif",
+		"level": 1,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Rib Cage",
+		"image": "/images/armors/Rib_Cage.gif",
+		"level": 2,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Scales of the Greater Basilisk",
+		"image": "/images/armors/Scales_of_the_Greater_Basilisk.gif",
+		"level": 3,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Tunic of the Cyclops King",
+		"image": "/images/armors/Tunic_of_the_Cyclops_King.gif",
+		"level": 4,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Breastplate of Brimstone",
+		"image": "/images/armors/Breastplate_of_Brimstone.gif",
+		"level": 5,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Armor of Wonder",
+		"image": "/images/armors/Armor_of_Wonder.gif",
+		"level": 6,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Dragon Scale Armor",
+		"image": "/images/armors/Dragon_Scale_Armor.gif",
+		"level": 7,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Titan's Cuirass",
+		"image": "/images/armors/Titan's_Cuirass.gif",
+		"level": 8,
+		"type": "ARMOR"
+	},
+	{
+		"name": "Power of the Dragon Father",
+		"image": "/images/armors/Power_of_the_Dragon_Father.gif",
+		"level": 9,
+		"type": "ARMOR"
+	}
+]

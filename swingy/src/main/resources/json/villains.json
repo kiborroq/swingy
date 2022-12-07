@@ -1,0 +1,308 @@
+[
+	{
+		"name": "Halberdier",
+		"image": "/images/villains/Halberdier.gif",
+		"level": 1,
+		"attack": 7,
+		"hp": 15
+	},
+	{
+		"name": "Marksman",
+		"image": "/images/villains/Marksman.gif",
+		"level": 3,
+		"attack": 9,
+		"hp": 20
+	},
+	{
+		"name": "Royal Griffin",
+		"image": "/images/villains/Royal_Griffin.gif",
+		"level": 4,
+		"attack": 10,
+		"hp": 25
+	},
+	{
+		"name": "Crusader",
+		"image": "/images/villains/Crusader.gif",
+		"level": 5,
+		"attack": 12,
+		"hp": 30
+	},
+	{
+		"name": "Zealot",
+		"image": "/images/villains/Zealot.gif",
+		"level": 6,
+		"attack": 14,
+		"hp": 35
+	},
+	{
+		"name": "Champion",
+		"image": "/images/villains/Champion.gif",
+		"level": 7,
+		"attack": 17,
+		"hp": 45
+	},
+	{
+		"name": "Archangel",
+		"image": "/images/villains/Archangel.gif",
+		"level": 9,
+		"attack": 36,
+		"hp": 60
+	},
+
+
+	{
+		"name": "Centaur Captain",
+		"image": "/images/villains/Centaur_Captain.gif",
+		"level": 1,
+		"attack": 8,
+		"hp": 13
+	},
+	{
+		"name": "Battle Dwarf",
+		"image": "/images/villains/Battle_Dwarf.gif",
+		"level": 3,
+		"attack": 9,
+		"hp": 20
+	},
+	{
+		"name": "Grand Elf",
+		"image": "/images/villains/Grand_Elf.gif",
+		"level": 4,
+		"attack": 11,
+		"hp": 25
+	},
+	{
+		"name": "Silver Pegasus",
+		"image": "/images/villains/Silver_Pegasus.gif",
+		"level": 5,
+		"attack": 13,
+		"hp": 30
+	},
+	{
+		"name": "Dendroid Soldier",
+		"image": "/images/villains/Dendroid_Soldier.gif",
+		"level": 6,
+		"attack": 12,
+		"hp": 40
+	},
+	{
+		"name": "War Unicorn",
+		"image": "/images/villains/War_Unicorn.gif",
+		"level": 7,
+		"attack": 19,
+		"hp": 45
+	},
+	{
+		"name": "Gold Dragon",
+		"image": "/images/villains/Gold_Dragon.gif",
+		"level": 9,
+		"attack": 33,
+		"hp": 65
+	},
+
+
+	{
+		"name": "Master Gremlin",
+		"image": "/images/villains/Master_Gremlin.gif",
+		"level": 1,
+		"attack": 7,
+		"hp": 12
+	},
+	{
+		"name": "Obsidian Gargoyle",
+		"image": "/images/villains/Obsidian_Gargoyle.gif",
+		"level": 3,
+		"attack": 8,
+		"hp": 21
+	},
+	{
+		"name": "Iron Golem",
+		"image": "/images/villains/Iron_Golem.gif",
+		"level": 4,
+		"attack": 10,
+		"hp": 27
+	},
+	{
+		"name": "Arch Mage",
+		"image": "/images/villains/Arch_Mage.gif",
+		"level": 5,
+		"attack": 12,
+		"hp": 32
+	},
+	{
+		"name": "Master Genie",
+		"image": "/images/villains/Master_Genie.gif",
+		"level": 6,
+		"attack": 13,
+		"hp": 42
+	},
+	{
+		"name": "Naga Queen",
+		"image": "/images/villains/Naga_Queen.gif",
+		"level": 7,
+		"attack": 20,
+		"hp": 43
+	},
+	{
+		"name": "Titan",
+		"image": "/images/villains/Titan.gif",
+		"level": 9,
+		"attack": 35,
+		"hp": 68
+	},
+
+
+	{
+		"name": "Familiar",
+		"image": "/images/villains/Familiar.gif",
+		"level": 1,
+		"attack": 6,
+		"hp": 11
+	},
+	{
+		"name": "Magog",
+		"image": "/images/villains/Magog.gif",
+		"level": 3,
+		"attack": 9,
+		"hp": 19
+	},
+	{
+		"name": "Cerberus",
+		"image": "/images/villains/Cerberus.gif",
+		"level": 4,
+		"attack": 11,
+		"hp": 25
+	},
+	{
+		"name": "Horned Demon",
+		"image": "/images/villains/Horned_Demon.gif",
+		"level": 5,
+		"attack": 15,
+		"hp": 33
+	},
+	{
+		"name": "Pit Lord",
+		"image": "/images/villains/Pit_Lord.gif",
+		"level": 6,
+		"attack": 17,
+		"hp": 40
+	},
+	{
+		"name": "Efreet Sultan",
+		"image": "/images/villains/Efreet_Sultan.gif",
+		"level": 7,
+		"attack": 24,
+		"hp": 44
+	},
+	{
+		"name": "Arch Devil",
+		"image": "/images/villains/Arch_Devil.gif",
+		"level": 9,
+		"attack": 40,
+		"hp": 60
+	},
+
+
+
+	{
+		"name": "Skeleton Warrior",
+		"image": "/images/villains/Skeleton_Warrior.gif",
+		"level": 1,
+		"attack": 6,
+		"hp": 10
+	},
+	{
+		"name": "Zombie",
+		"image": "/images/villains/Zombie.gif",
+		"level": 3,
+		"attack": 8,
+		"hp": 20
+	},
+	{
+		"name": "Wraith",
+		"image": "/images/villains/Wraith.gif",
+		"level": 4,
+		"attack": 10,
+		"hp": 23
+	},
+	{
+		"name": "Vampire Lord",
+		"image": "/images/villains/Vampire_Lord.gif",
+		"level": 5,
+		"attack": 14,
+		"hp": 35
+	},
+	{
+		"name": "Power Lich",
+		"image": "/images/villains/Power_Lich.gif",
+		"level": 6,
+		"attack": 20,
+		"hp": 43
+	},
+	{
+		"name": "Dread Knight",
+		"image": "/images/villains/Dread_Knight.gif",
+		"level": 7,
+		"attack": 28,
+		"hp": 47
+	},
+	{
+		"name": "Ghost Dragon",
+		"image": "/images/villains/Ghost_Dragon.gif",
+		"level": 9,
+		"attack": 45,
+		"hp": 58
+	},
+
+
+
+	{
+		"name": "Infernal Troglodyte",
+		"image": "/images/villains/Infernal_Troglodyte.gif",
+		"level": 1,
+		"attack": 7,
+		"hp": 13
+	},
+	{
+		"name": "Harpy Hag",
+		"image": "/images/villains/Harpy_Hag.gif",
+		"level": 3,
+		"attack": 10,
+		"hp": 21
+	},
+	{
+		"name": "Evil Eye",
+		"image": "/images/villains/Evil_Eye.gif",
+		"level": 4,
+		"attack": 13,
+		"hp": 25
+	},
+	{
+		"name": "Medusa Queen",
+		"image": "/images/villains/Medusa_Queen.gif",
+		"level": 5,
+		"attack": 15,
+		"hp": 33
+	},
+	{
+		"name": "Minotaur King",
+		"image": "/images/villains/Minotaur_King.gif",
+		"level": 6,
+		"attack": 21,
+		"hp": 39
+	},
+	{
+		"name": "Scorpicore",
+		"image": "/images/villains/Scorpicore.gif",
+		"level": 7,
+		"attack": 29,
+		"hp": 45
+	},
+	{
+		"name": "Black Dragon",
+		"image": "/images/villains/Black_Dragon.gif",
+		"level": 9,
+		"attack": 47,
+		"hp": 61
+	}
+]

@@ -9,8 +9,8 @@
 	<version>1.0-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 
 		<hibernate-version>5.6.5.Final</hibernate-version>
 		<validator-version>7.0.4.Final</validator-version>
@@ -19,9 +19,23 @@
 		<lombok-version>1.18.22</lombok-version>
 		<slf4j-version>1.7.36</slf4j-version>
 		<validation-version>2.0.1.Final</validation-version>
+		<intellij-version>7.0.3</intellij-version>
+		<appache-common-version>3.12.0</appache-common-version>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>jetbrains.releases</id>
+			<url>https://www.jetbrains.com/intellij-repository/releases</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
+		<dependency>
+			<groupId>com.intellij</groupId>
+			<artifactId>forms_rt</artifactId>
+			<version>${intellij-version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -33,16 +47,25 @@
 			<artifactId>postgresql</artifactId>
 			<version>${postgres-version}</version>
 		</dependency>
-		<dependency>
-			<groupId>org.hibernate.validator</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>${validator-version}</version>
-		</dependency>
+
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>${validation-version}</version>
+			<version>2.0.1.Final</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.0.10.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.glassfish</groupId>
+			<artifactId>javax.el</artifactId>
+			<version>3.0.1-b10</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -63,6 +86,18 @@
 			<artifactId>slf4j-simple</artifactId>
 			<version>${slf4j-version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${appache-common-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.14.1</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<plugins>
@@ -87,6 +122,23 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>ideauidesigner-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javac2</goal>
+						</goals>
+					</execution>
+				</executions>
+
+				<configuration>
+					<fork>true</fork>
+					<debug>true</debug>
+					<failOnError>true</failOnError>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
