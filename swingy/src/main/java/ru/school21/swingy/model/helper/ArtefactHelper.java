@@ -10,6 +10,7 @@ import ru.school21.swingy.util.ImageUtil;
 import ru.school21.swingy.util.JsonUtils;
 
 import javax.swing.ImageIcon;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -30,7 +31,13 @@ public final class ArtefactHelper {
 
 		List<ArtefactInfo> infos = JsonUtils.readList(ARTEFACTS_CONFIG, ArtefactInfo.class);
 		for (ArtefactInfo info : infos) {
-			ARTEFACT_BY_LEVEL.put(info.getLevel(), infos);
+			List<ArtefactInfo> infosByLevel = ARTEFACT_BY_LEVEL.get(info.getLevel());
+			if (infosByLevel == null) {
+				infosByLevel = new ArrayList<>();
+				ARTEFACT_BY_LEVEL.put(info.getLevel(), infosByLevel);
+			}
+			infosByLevel.add(info);
+
 			ARTEFACT_BY_NAME.put(info.getName(), info);
 		}
 

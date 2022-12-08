@@ -144,7 +144,7 @@ public class GameGuiView extends JFrame implements GameView {
 
 		setTitle("Swingy");
 		setSize(1500, 920);
-		setMinimumSize(new Dimension(1500, 920));
+		setResizable(false);
 		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		setIconImage(ImageUtil.getImageIcon("/images/icons/swingy.png").getImage());
 		setLocationRelativeTo(null);
