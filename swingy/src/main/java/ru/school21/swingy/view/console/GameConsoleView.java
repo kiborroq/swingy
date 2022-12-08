@@ -20,14 +20,15 @@ import static ru.school21.swingy.view.console.CommonConsolePrinter.printHeroStat
 import static ru.school21.swingy.view.console.CommonConsolePrinter.printMap;
 import static ru.school21.swingy.view.console.CommonConsolePrinter.printVillainStats;
 
-public class GameViewConsoleView implements GameView {
+public class GameConsoleView implements GameView {
 
 	private final GameModel model;
 	private final GameController controller;
 
 	private boolean mainLoop;
+	private boolean subLoop;
 
-	public GameViewConsoleView(GameModel model, GameController controller) {
+	public GameConsoleView(GameModel model, GameController controller) {
 		this.model = model;
 		this.model.addListener(this, GameModelEvent.class);
 		this.model.addListener(this, HeroStatsModelEvent.class);
@@ -59,7 +60,7 @@ public class GameViewConsoleView implements GameView {
 			printHeroStats(model.getHeroStats());
 			printMap(model.getMap());
 
-			switch (chooseVariantNumber("North", "East", "South", "West", "Exit")) {
+			switch (chooseVariantNumber("North", "East", "South", "West", "Main menu")) {
 				case 1:
 					controller.doStep(DirectionType.NORTH);
 					break;
@@ -73,7 +74,7 @@ public class GameViewConsoleView implements GameView {
 					controller.doStep(DirectionType.WEST);
 					break;
 				case 5:
-					exit();
+					mainMenu();
 					break;
 			}
 		}
@@ -82,6 +83,7 @@ public class GameViewConsoleView implements GameView {
 	@Override
 	public void stop() {
 		mainLoop = false;
+		subLoop = false;
 	}
 
 	private void printLogs(List<String> logs) {
@@ -116,17 +118,24 @@ public class GameViewConsoleView implements GameView {
 		}
 	}
 
-	private void exit() {
-		switch (chooseVariantNumber("Save", "Exit", "Cancel")) {
-			case 1:
-				controller.save();
-				controller.exit();
-				break;
-			case 2:
-				controller.exit();
-				break;
-			case 3:
-				break;
+	private void mainMenu() {
+		subLoop = true;
+
+		while (subLoop) {
+			switch (chooseVariantNumber("Switch to gui", "Save", "Exit", "Back to game")) {
+				case 1:
+					controller.switchToGui();
+					break;
+				case 2:
+					controller.save();
+					break;
+				case 3:
+					controller.exit();
+					break;
+				case 4:
+					subLoop = false;
+					break;
+			}
 		}
 	}
 }

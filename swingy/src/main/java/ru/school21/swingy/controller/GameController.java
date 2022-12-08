@@ -38,4 +38,12 @@ public class GameController {
 	public void throwArtefact() {
 		model.throwArtefact();
 	}
+
+	public void switchToGui() {
+		model.switchToGui();
+	}
+
+	public void switchToConsole() {
+		model.switchToConsole();
+	}
 }

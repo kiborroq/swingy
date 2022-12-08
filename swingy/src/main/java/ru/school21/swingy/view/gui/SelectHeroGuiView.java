@@ -60,6 +60,8 @@ public class SelectHeroGuiView extends JFrame implements SelectHeroView {
 	private JTabbedPane tabs;
 	private HeroStatsGuiView currentHeroStats;
 
+	private final JFrame thisFrame = this;
+
 	private final SelectHeroController controller;
 	private final SelectHeroModel model;
 
@@ -139,7 +141,7 @@ public class SelectHeroGuiView extends JFrame implements SelectHeroView {
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
-				int answer = JOptionPane.showConfirmDialog(null,"Do you want exit?", "Exit", JOptionPane.YES_NO_OPTION);
+				int answer = JOptionPane.showConfirmDialog(thisFrame,"Do you want exit?", "Exit", JOptionPane.YES_NO_OPTION);
 				if (answer == JOptionPane.YES_OPTION) {
 					controller.exit();
 				}

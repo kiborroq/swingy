@@ -23,7 +23,7 @@ public final class CommonConsolePrinter {
 	private static final ConsoleUtils.Color HERO = ConsoleUtils.Color.BLUE;
 	private static final ConsoleUtils.Color HERO_ITEM = ConsoleUtils.Color.BLUE_BACKGROUND;
 
-	private static final ConsoleUtils.Color VILLAIN = ConsoleUtils.Color.MAGENTA;
+	private static final ConsoleUtils.Color VILLAIN = ConsoleUtils.Color.RED;
 	private static final ConsoleUtils.Color VILLAIN_ITEM = ConsoleUtils.Color.RED_BACKGROUND;
 
 	private static final ConsoleUtils.Color ARTEFACT = ConsoleUtils.Color.CYAN;

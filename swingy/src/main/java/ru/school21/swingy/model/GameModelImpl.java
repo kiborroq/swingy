@@ -206,11 +206,22 @@ public class GameModelImpl extends AbstractEventPublisher implements GameModel {
 				heroRepository.save(hero);
 			}
 		});
+		publishEvent(new LogModelEvent("Game have been saved"));
 	}
 
 	@Override
 	public void exit() {
 		publishEvent(ApplicationModelEvent.EXIT);
+	}
+
+	@Override
+	public void switchToGui() {
+		publishEvent(ApplicationModelEvent.SWITCH_TO_GUI);
+	}
+
+	@Override
+	public void switchToConsole() {
+		publishEvent(ApplicationModelEvent.SWITCH_TO_CONSOLE);
 	}
 
 	@Override

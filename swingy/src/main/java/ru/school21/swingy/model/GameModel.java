@@ -19,4 +19,8 @@ public interface GameModel extends HeroStatsModel, EventPublisher {
 
 	void save();
 	void exit();
+
+	void switchToGui();
+
+	void switchToConsole();
 }

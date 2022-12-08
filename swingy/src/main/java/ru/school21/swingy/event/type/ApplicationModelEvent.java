@@ -4,6 +4,6 @@ import ru.school21.swingy.event.ModelEvent;
 
 public enum ApplicationModelEvent implements ModelEvent {
 	EXIT,
-	GUI_SELECTED,
-	CONSOLE_SELECTED;
+	SWITCH_TO_GUI,
+	SWITCH_TO_CONSOLE;
 }

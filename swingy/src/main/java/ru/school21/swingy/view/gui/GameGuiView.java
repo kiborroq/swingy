@@ -14,6 +14,8 @@ import ru.school21.swingy.view.GameView;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -48,8 +50,13 @@ public class GameGuiView extends JFrame implements GameView {
 	private JTextArea logsTextArea;
 	private JPanel logsPanel;
 	private JScrollPane logsScrollPanel;
+	private JPanel manageButtonsPanel;
+	private JButton consoleModeButton;
+	private JButton saveButton;
 	private MapPanel mapPanelView;
 	private JPanel coverMapPanel;
+
+	private final JFrame thisFrame = this;
 
 	private final GameModel model;
 	private final GameController controller;
@@ -88,6 +95,20 @@ public class GameGuiView extends JFrame implements GameView {
 			}
 		});
 
+		saveButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				controller.save();
+			}
+		});
+
+		consoleModeButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				controller.switchToConsole();
+			}
+		});
+
 		this.addComponentListener(new ComponentAdapter() {
 			@Override
 			public void componentResized(ComponentEvent e) {
@@ -98,7 +119,7 @@ public class GameGuiView extends JFrame implements GameView {
 		this.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowClosing(WindowEvent e) {
-				int answer = JOptionPane.showConfirmDialog(null,"Do you want to save progress?", "Exit", JOptionPane.YES_NO_CANCEL_OPTION);
+				int answer = JOptionPane.showConfirmDialog(thisFrame, "Do you want to save progress?", "Exit", JOptionPane.YES_NO_CANCEL_OPTION);
 				if (answer != JOptionPane.CANCEL_OPTION) {
 					if (answer == JOptionPane.YES_OPTION) {
 						controller.save();
@@ -116,20 +137,17 @@ public class GameGuiView extends JFrame implements GameView {
 
 	@Override
 	public void render() {
+		updateMap();
+		heroStats.setModel(model);
+		heroStatsWrapper.add(heroStats);
+		setContentPane(gamePanel);
+
 		setTitle("Swingy");
 		setSize(1500, 920);
 		setMinimumSize(new Dimension(1500, 920));
 		setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 		setIconImage(ImageUtil.getImageIcon("/images/icons/swingy.png").getImage());
-
-		updateMap();
-
-		heroStats.setModel(model);
-		heroStatsWrapper.add(heroStats);
-		setContentPane(gamePanel);
-
 		setLocationRelativeTo(null);
-
 		setVisible(true);
 
 		scrollMapPanel.getVerticalScrollBar().setUnitIncrement(20);
@@ -154,7 +172,7 @@ public class GameGuiView extends JFrame implements GameView {
 					VillainDto villainDto = model.getVillainStats();
 					if (villainDto != null) {
 						FightDialog dialog = new FightDialog();
-						dialog.run(this, villainDto,
+						dialog.run(thisFrame, villainDto,
 								new Runnable() {
 									@Override
 									public void run() {
@@ -170,13 +188,13 @@ public class GameGuiView extends JFrame implements GameView {
 					}
 					break;
 				case LOST:
-					JOptionPane.showMessageDialog(null, "You have been lost", "Fight", WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(thisFrame, "You have been lost", "Fight", WARNING_MESSAGE);
 					break;
 				case ARTEFACT_FOUND:
 					ArtefactDto artefactDto = model.getFoundArtefactStats();
 					if (artefactDto != null) {
 						ArtefactDialog dialog = new ArtefactDialog();
-						dialog.run(this, artefactDto,
+						dialog.run(thisFrame, artefactDto,
 								new Runnable() {
 									@Override
 									public void run() {

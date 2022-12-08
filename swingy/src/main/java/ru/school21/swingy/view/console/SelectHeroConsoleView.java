@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 import static ru.school21.swingy.util.ConsoleUtils.chooseVariantNumber;
-import static ru.school21.swingy.util.ConsoleUtils.colorize;
+import static ru.school21.swingy.util.ConsoleUtils.print;
 import static ru.school21.swingy.util.ConsoleUtils.printFormat;
 import static ru.school21.swingy.util.ConsoleUtils.printLine;
 import static ru.school21.swingy.util.ConsoleUtils.readLine;
@@ -41,8 +41,9 @@ public class SelectHeroConsoleView implements SelectHeroView {
 
 			if (!errors.isEmpty()) {
 				printLine();
+				printLine(ConsoleUtils.Color.RED, "Errors: ");
 				for (Map.Entry<String, String> error : errors.entrySet()) {
-					printFormat(colorize("Error: %s%n", ConsoleUtils.Color.RED), error.getValue());
+					printFormat("%s%n", error.getValue());
 				}
 			}
 		} else if (modelEvent instanceof HeroStatsModelEvent) {
@@ -82,7 +83,7 @@ public class SelectHeroConsoleView implements SelectHeroView {
 			switch (chooseVariantNumber("Set hero name", "Set hero class", "Finish to create the hero", "Back")) {
 				case 1:
 					printLine();
-					printLine("Input name: ");
+					print("Input name: ");
 					String name = readLine();
 					controller.inputName(name);
 					break;
