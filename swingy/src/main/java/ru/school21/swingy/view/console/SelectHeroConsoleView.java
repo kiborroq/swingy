@@ -43,7 +43,7 @@ public class SelectHeroConsoleView implements SelectHeroView {
 				printLine();
 				printLine(ConsoleUtils.Color.RED, "Errors: ");
 				for (Map.Entry<String, String> error : errors.entrySet()) {
-					printFormat("%s%n", error.getValue());
+					printLine(error.getValue());
 				}
 			}
 		} else if (modelEvent instanceof HeroStatsModelEvent) {

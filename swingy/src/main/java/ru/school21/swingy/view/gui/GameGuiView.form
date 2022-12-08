@@ -122,7 +122,7 @@
                 <properties>
                   <background color="-4934476"/>
                   <hideActionText value="true"/>
-                  <text value="Save the game"/>
+                  <text value="Save progress"/>
                 </properties>
               </component>
               <hspacer id="e0ad1">

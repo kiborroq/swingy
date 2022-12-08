@@ -92,9 +92,9 @@ public class GameConsoleView implements GameView {
 		}
 
 		printLine();
-		printLine(ConsoleUtils.Color.YELLOW, "Events: ");
+		printLine(ConsoleUtils.Color.CYAN, "Events: ");
 		for (String log : logs) {
-			printLine(" - " + log);
+			printLine(log);
 		}
 	}
 
@@ -122,7 +122,7 @@ public class GameConsoleView implements GameView {
 		subLoop = true;
 
 		while (subLoop) {
-			switch (chooseVariantNumber("Switch to gui", "Save", "Exit", "Back to game")) {
+			switch (chooseVariantNumber("Switch to gui", "Save progress", "Exit", "Back to game")) {
 				case 1:
 					controller.switchToGui();
 					break;

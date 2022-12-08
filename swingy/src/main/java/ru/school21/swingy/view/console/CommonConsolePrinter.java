@@ -26,7 +26,7 @@ public final class CommonConsolePrinter {
 	private static final ConsoleUtils.Color VILLAIN = ConsoleUtils.Color.RED;
 	private static final ConsoleUtils.Color VILLAIN_ITEM = ConsoleUtils.Color.RED_BACKGROUND;
 
-	private static final ConsoleUtils.Color ARTEFACT = ConsoleUtils.Color.CYAN;
+	private static final ConsoleUtils.Color ARTEFACT = ConsoleUtils.Color.MAGENTA;
 
 	public static void printHeroStats(HeroStatsDto statsDto) {
 		printLine();
