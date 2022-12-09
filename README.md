@@ -116,8 +116,4 @@ java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
 
 5) Artefact dialog view
 
-![Fight view](files/fight_gui.PNG)
-
-6) Artefact dialog view
-
-![Fight view](files/artefact_gui.PNG)
+![Artefact view](files/artefact_gui.PNG)
