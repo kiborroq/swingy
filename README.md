@@ -69,7 +69,7 @@ Leveling up is based on the following formula: *level * 1000 + (level - 1) ^ 2 *
 ```
 mvn clean package
 ```
-2) Run app in console or gui mode
+2) In target directory run app in console or gui mode
 ```
 java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar console
 java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
