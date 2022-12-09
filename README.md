@@ -60,7 +60,7 @@ Leveling up is based on the following formula: *level * 1000 + (level - 1) ^ 2 *
 ### 2. Program requirements:
 - Maven
 - Java 8
-- Postgres [see properties](swingy/src/main/resources/hibernate.properties)
+- Postgres ([see properties](swingy/src/main/resources/hibernate.properties))
 
 ---
 
