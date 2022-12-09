@@ -73,10 +73,10 @@ In this project all sprites and some statistics were taken in [Might and Magic w
 ```
 mvn clean package
 ```
-2) In target directory run app in console or gui mode
+2) In project root run app in console or gui mode
 ```
-java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar console
-java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
+java -jar target/swingy.jar console
+java -jar target/swingy.jar gui
 ```
 
 ---
