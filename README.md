@@ -55,6 +55,10 @@ If a hero loses a battle, he dies and also looses the mission. If a hero wins a 
 
 Leveling up is based on the following formula: *level * 1000 + (level - 1) ^ 2 * 450*
 
+#### Heroes, villains, artefacts, terrains
+Statistics and sprites for heroes, villains, artefacts and terrains you may adjust in [json files](swingy/src/main/resources/json).
+In this project all sprites and some statistics was taken in [Might and Magic wiki](https://heroes.thelazy.net//index.php/Main_Page)
+
 ---
 
 ### 2. Program requirements:
@@ -77,7 +81,7 @@ java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
 
 ---
 
-### 4. Application screens:
+### 5. Application screens:
 
 #### Console views are present below:
 1) Hero create view
