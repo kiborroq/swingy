@@ -73,7 +73,7 @@ In this project all sprites and some statistics was taken in [Might and Magic wi
 ```
 mvn clean package
 ```
-2) Run app in console or gui mode
+2) In target directory run app in console or gui mode
 ```
 java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar console
 java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
@@ -120,8 +120,4 @@ java -jar swingy-1.0-SNAPSHOT-jar-with-dependencies.jar gui
 
 5) Artefact dialog view
 
-![Fight view](files/fight_gui.PNG)
-
-6) Artefact dialog view
-
-![Fight view](files/artefact_gui.PNG)
+![Artefact view](files/artefact_gui.PNG)
