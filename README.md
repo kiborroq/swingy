@@ -18,6 +18,7 @@ switching between the console view and GUI view
 ### 2. Program requirements:
 - Maven
 - Java 8
+- Postgres [see properties](swingy/src/main/resources/hibernate.properties)
 
 ---
 
